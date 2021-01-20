@@ -15,7 +15,7 @@
         <route id="crear-usuario-route">
             <from id="_from-crear-usuario-route" uri="direct:crear-usuario-route"/>
             <log id="_log-inicio-ruta-crear-usuario" message=":::Inicio Ruta Crear Usuario:::"/>
-            <log id="_log-body-crear-usuario" message="Cuerpo entrada ---> ${body}"/>
+            <log id="_log-body-crear-usuario" message="Cuerpo entrada webHook---> ${body}"/>
             <setProperty id="_propertyIdUsuarioS" propertyName="IdUsuarioS">
                 <jsonpath id="_psonpathropertyIdUsuarioS">$.IdUsuarios</jsonpath>
             </setProperty>
